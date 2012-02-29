@@ -1,0 +1,10 @@
+#############################
+#     For: backup a file with a uniq name
+#   Usage: fcp file_or_dir
+#  Create: yongfu <rickie622@gmail.com>
+# Version: v1 create  2012-02-28
+##########################################################
+
+# Usage:
+#       fcp [-h|--help] [-V|--version]
+#       fcp [-c|--confirm] dirname/filename
