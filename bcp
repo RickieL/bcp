@@ -42,7 +42,7 @@ warning( )
 EXITCODE=0
 Version=0.01
 Date=$(date "+%Y%m%d")
-Datetime=$(expr substr $(date "+%s") 6 5)
+Datetime=$(expr substr $(date "+%s") 5 6)
 Confirm="Y"
 _Confirm=
 
