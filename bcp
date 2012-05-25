@@ -41,8 +41,7 @@ warning( )
 
 EXITCODE=0
 Version=0.01
-Date=$(date "+%Y%m%d")
-Datetime=$(expr substr $(date "+%s") 5 6)
+Date_time=$(date +"%Y%m%d_%H%M%S")
 Confirm="Y"
 _Confirm=
 
@@ -103,7 +102,7 @@ if [ -d $cp_File_Dir ] ; then
     if [ "x$cp_Dir" = "x///" ] || [ "x$cp_Dir" = "x/tmp" ] || [ "x$cp_Dir" = "x/root" ]  || [ "x$cp_Dir" = "x//tmp" ] || [ "x$cp_Dir" = "x//root" ] ; then
         error "The Directoris \"/\", \"/tmp\", \"/root\" are banned to copy!"
     fi
-    cp -r  $cp_Dir $cp_Dir.$Datetime.$Date
+    cp -r  $cp_Dir $cp_Dir.$Date_time
 else
-    cp $cp_File_Dir $cp_File_Dir.$Datetime.$Date
+    cp $cp_File_Dir $cp_File_Dir.$Date_time
 fi
