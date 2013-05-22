@@ -8,3 +8,5 @@
 # Usage:
 #       bcp [-h|--help] [-V|--version]
 #       bcp [-c|--confirm] dirname/filename
+
+迁移到 https://github.com/RickieL/shell_tools/tree/master/bcp 
